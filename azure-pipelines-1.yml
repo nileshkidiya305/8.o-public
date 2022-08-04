@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: Nilesh-Kidiya-Agent
 
 steps:
 - script: echo Hello, world!
