@@ -11,7 +11,7 @@ pool:
   vmImage: Nilesh-Kidiya-Agent
 
 steps:
-- script: echo Hello, world! From Branch - $(Build.SourceBranchName) with Directory - $(Build.SourcesDirectory) and Work Directory - $(System.DefaultWorkingDirectory)
+- script: echo Hello, world! $(Build.ArtifactStaging) From Branch - $(Build.SourceBranchName) with Directory - $(Build.SourcesDirectory) and Work Directory - $(System.DefaultWorkingDirectory)
   displayName: 'Run a one-line script'
 
 - script: |
