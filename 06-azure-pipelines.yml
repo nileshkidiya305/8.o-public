@@ -7,10 +7,11 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: default
+  vmImage: Nilesh-Kidiya-Agent
 
 steps:
-- script: echo Hello, world!
+- script: echo Hello, world! From Branch - $(Build.BranchName) with Directory - $(Build.SourcesDirectory) and Work Directory - $(System.DefaultWorkingDirectory)
   displayName: 'Run a one-line script'
 
 - script: |
