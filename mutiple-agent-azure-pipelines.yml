@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+strategy:
+ matrix:
+  server1 :
+   serverName: 'Nilesh-Kidiya-Agent'
+  server2 :
+   serverName: '8.132-Windows-Agent'
+   
+pool:
+  vmImage: $(serverName)
+
+steps:
+- script: echo Hello, world in $(serverName) server
+  displayName: 'Run a one-line script'
+
