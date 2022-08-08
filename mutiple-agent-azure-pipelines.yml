@@ -14,7 +14,8 @@ strategy:
    serverName: '8.132-Windows-Agent'
    
 pool:
-  vmImage: $(serverName)
+ name: default
+ vmImage: $(serverName)
 
 steps:
 - script: echo Hello, world in $(serverName) server
